@@ -1,12 +1,11 @@
-# Parts
+# Carotid
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file. 
+The aim of this risk calculator is to assist in the management of patients presenting with carotid artery stenosis and determining the best management strategy.
 
-Add a numbered part: `# (PART) Act one {-}` (followed by `# A chapter`)
+## Input Variables
 
-Add an unnumbered part: `# (PART\*) Act one {-}` (followed by `# A chapter`)
+## 5 year stroke risk
 
-Add an appendix as a special kind of un-numbered part: `# (APPENDIX) Other stuff {-}` (followed by `# A chapter`). Chapters in an appendix are prepended with letters instead of numbers.
-
+## Post operative Myocardial Infarction
 
 

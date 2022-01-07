@@ -21,17 +21,6 @@ This book is intended as an explanatory text to support the risk tool available 
 
 Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made.  Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction.
 
-#
-
-
-## Preview book
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
-
-```{r eval=FALSE}
-bookdown::serve_book()
-```
-
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

@@ -1,0 +1,16 @@
+# Abdominal Aortic Anuerysms (AAA) {#aaa}
+
+The aim of this risk calculator is to assist in the management of patients with asymptomatic infrarenal aortica aneurysms found through screening or incidentally.
+
+## Input variables
+
+### Age
+### Sex
+### Race
+
+## 30d Procedural Mortality
+
+
+
+## Post Operative Myocardial Infarcation
+
