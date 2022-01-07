@@ -5,6 +5,9 @@ The aim of this risk calculator is to assist in the management of patients with 
 ## Input variables
 
 ### Age
+
+This describes the expected age of the patient at the time of the procedure.  This is likely the same age as the patient at the time of the evaluation.
+
 ### Sex
 ### Race
 
