@@ -16,3 +16,5 @@ carotid
 input-variables-1
 year-stroke-risk
 post-operative-myocardial-infarction
+methods
+feedback
