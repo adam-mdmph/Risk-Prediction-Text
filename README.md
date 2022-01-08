@@ -1,13 +1,7 @@
-Welcome! 
+# VasCalc: Risk Prediction in Vascular Surgery
 
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). 
+This project is aimed to develop a text to accompany a comprehensive risk calculator in vascular surgery, VasCalc, to be found at [VasCalc.org](www.vascalc.org).
 
-This template provides a skeleton file structure that you can edit to create your book. 
+The text can be found [here](https://adam-mdmph.github.io/Risk-Prediction-Text/).
 
-The contents inside the .Rmd files provide some pointers to help you get started, but feel free to also delete the content in each file and start fresh.
-
-Additional resources:
-
-The **bookdown** book: https://bookdown.org/yihui/bookdown/
-
-The **bookdown** package reference site: https://pkgs.rstudio.com/bookdown
+For suggestions, comments or questions please submit an issue on our [github page](https://github.com/adam-mdmph/vascalc/issues) or [send us an email](mailto:vascularcalculator@gmail.com).

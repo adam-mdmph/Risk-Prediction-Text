@@ -19,7 +19,7 @@ This book is intended as an explanatory text to support the risk tool available 
 
 ## Usage 
 
-Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made.  Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction.
+Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made.  Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction.  This risk calculator is developed for the sole purpose of decision support and resuls should not superscede clinician and patient preference.
 
 ## Methods
 
