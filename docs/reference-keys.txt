@@ -2,6 +2,8 @@ fig:nice-fig
 tab:nice-tab
 about
 usage
+methods
+feedback
 aaa
 input-variables
 age
@@ -16,5 +18,3 @@ carotid
 input-variables-1
 year-stroke-risk
 post-operative-myocardial-infarction
-methods
-feedback

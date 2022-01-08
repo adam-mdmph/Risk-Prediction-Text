@@ -6,7 +6,7 @@
 ]{book}
 \title{Manual for Risk Prediction in Vascular Surgery}
 \author{Adam Johnson}
-\date{2022-01-07}
+\date{2022-01-08}
 
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
@@ -135,6 +135,42 @@ This book is intended as an explanatory text to support the risk tool available 
 \section{Usage}\label{usage}}
 
 Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made. Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction.
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+The initial algorithms included in this project were found through a literature search of available medical databases, bibliography reviews and referrals from content experts. Published algorithms were reviewed and included if they met the following inclusion criteria.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Input variables available in the pre-operative setting.
+\item
+  Outcome variable relevant to decision making.
+\item
+  Full regression model with beta coefficients and intercept publically available in publication or through contact with publication authors.
+\end{enumerate}
+
+Available risk models were then reviewed and included based on their quality. Quality of risk model was determined through.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Accuracy assessments, such as AUC, sensitivity or specificity assessments.
+\item
+  Parsimonious input variable selection and clear description of variable manipulation.
+\item
+  Homogenous patient population that aligns with the clinical question.
+\item
+  Transparent stakeholder engagement and algorithm development.
+\end{enumerate}
+
+\hypertarget{feedback}{%
+\section{Feedback}\label{feedback}}
+
+For suggestions, comments or questions please submit an issue on our \href{https://github.com/adam-mdmph/vascalc/issues}{github page} or \href{mailto:vascularcalculator@gmail.com}{send us an email}.
 
 \hypertarget{aaa}{%
 \chapter{Abdominal Aortic Anuerysms (AAA)}\label{aaa}}
