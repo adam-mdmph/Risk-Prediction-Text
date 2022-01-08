@@ -1,12 +1,12 @@
---- 
+---
 title: "Manual for Risk Prediction in Vascular Surgery"
 author: "Adam Johnson"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
+bibliography: references.bib
+csl: jvs.csl
+url: https://adam-mdmph.github.io/Risk-Prediction-Text/
 description: |
   This manual is meant as an explanatory text to support the risk tool available at www.vascalc.org.
 link-citations: yes
@@ -17,24 +17,24 @@ github-repo: https://github.com/adam-mdmph/Risk-Prediction-Text
 
 This book is intended as an explanatory text to support the risk tool available at www.vascalc.org.
 
-## Usage 
+## Usage
 
-Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made.  Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction.  This risk calculator is developed for the sole purpose of decision support and resuls should not superscede clinician and patient preference.
+Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made. Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction. This risk calculator is developed for the sole purpose of decision support and resuls should not superscede clinician and patient preference.
 
 ## Methods
 
-The initial algorithms included in this project were found through a literature search of available medical databases, bibliography reviews and referrals from content experts.  Published algorithms were reviewed and included if they met the following inclusion criteria.
+The initial algorithms included in this project were found through a literature search of available medical databases, bibliography reviews and referrals from content experts. Published algorithms were reviewed and included if they met the following inclusion criteria.
 
-1. Input variables available in the pre-operative setting.
-2. Outcome variable relevant to decision making.
-3. Full regression model with beta coefficients and intercept publically available in publication or through contact with publication authors.
+1.  Input variables available in the pre-operative setting.
+2.  Outcome variable relevant to decision making.
+3.  Full regression model with beta coefficients and intercept publically available in publication or through contact with publication authors.
 
-Available risk models were then reviewed and included based on their quality.  Quality of risk model was determined through.
+Available risk models were then reviewed and included based on their quality. Quality of risk model was determined through.
 
-1. Accuracy assessments, such as AUC, sensitivity or specificity assessments.
-2. Parsimonious input variable selection and clear description of variable manipulation.
-3. Homogenous patient population that aligns with the clinical question.
-4. Transparent stakeholder engagement and algorithm development.
+1.  Accuracy assessments, such as AUC, sensitivity or specificity assessments.
+2.  Parsimonious input variable selection and clear description of variable manipulation.
+3.  Homogenous patient population that aligns with the clinical question.
+4.  Transparent stakeholder engagement and algorithm development.
 
 ## Feedback
 

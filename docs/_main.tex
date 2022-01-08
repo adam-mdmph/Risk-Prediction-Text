@@ -45,46 +45,6 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -134,7 +94,7 @@ This book is intended as an explanatory text to support the risk tool available 
 \hypertarget{usage}{%
 \section{Usage}\label{usage}}
 
-Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made. Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction.
+Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made. Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction. This risk calculator is developed for the sole purpose of decision support and resuls should not superscede clinician and patient preference.
 
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
@@ -173,9 +133,9 @@ Available risk models were then reviewed and included based on their quality. Qu
 For suggestions, comments or questions please submit an issue on our \href{https://github.com/adam-mdmph/vascalc/issues}{github page} or \href{mailto:vascularcalculator@gmail.com}{send us an email}.
 
 \hypertarget{aaa}{%
-\chapter{Abdominal Aortic Anuerysms (AAA)}\label{aaa}}
+\chapter{Abdominal Aortic Aneurysms (AAA)}\label{aaa}}
 
-The aim of this risk calculator is to assist in the management of patients with asymptomatic infrarenal aortica aneurysms found through screening or incidentally.
+The aim of this risk calculator is to assist in the management of patients with asymptomatic infrarenal aortic aneurysms found through screening or incidentally.
 
 \hypertarget{input-variables}{%
 \section{Input variables}\label{input-variables}}
@@ -194,113 +154,39 @@ This describes the expected age of the patient at the time of the procedure. Thi
 \hypertarget{d-procedural-mortality}{%
 \section{30d Procedural Mortality}\label{d-procedural-mortality}}
 
+The model used for this risk prediction comes from the VSGNE published in 2015. \citet{eslami2015}
+
 \hypertarget{post-operative-myocardial-infarcation}{%
 \section{Post Operative Myocardial Infarcation}\label{post-operative-myocardial-infarcation}}
 
-\hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
+\hypertarget{clti}{%
+\chapter{CLTI}\label{clti}}
 
-Cross-references make it easier for your readers to find and link to elements in your book.
+The aim of this risk calculator is to assist in the management of patients with asymptomatic infrarenal aortica aneurysms found through screening or incidentally.
 
-\hypertarget{chapters-and-sub-chapters}{%
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
+\hypertarget{input-variables-1}{%
+\section{Input variables}\label{input-variables-1}}
 
-There are two steps to cross-reference any heading:
+\hypertarget{post-procedural-mortality}{%
+\section{Post-procedural mortality}\label{post-procedural-mortality}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
-  \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
-  \end{itemize}
-\item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
-  \end{itemize}
-\end{enumerate}
-
-\hypertarget{captioned-figures-and-tables}{%
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
-
-Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
-
-See Figure \ref{fig:nice-fig}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{_main_files/figure-latex/nice-fig-1} 
-
-}
-
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
-
-Don't miss Table \ref{tab:nice-tab}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rr}
-\toprule
-temperature & pressure\\
-\midrule
-0 & 0.0002\\
-20 & 0.0012\\
-40 & 0.0060\\
-60 & 0.0300\\
-80 & 0.0900\\
-\addlinespace
-100 & 0.2700\\
-120 & 0.7500\\
-140 & 1.8500\\
-160 & 4.2000\\
-180 & 8.8000\\
-\bottomrule
-\end{tabular}
-\end{table}
+\hypertarget{post-operative-myocardial-infarction}{%
+\section{Post operative myocardial infarction}\label{post-operative-myocardial-infarction}}
 
 \hypertarget{carotid}{%
 \chapter{Carotid}\label{carotid}}
 
 The aim of this risk calculator is to assist in the management of patients presenting with carotid artery stenosis and determining the best management strategy.
 
-\hypertarget{input-variables-1}{%
-\section{Input Variables}\label{input-variables-1}}
+\hypertarget{input-variables-2}{%
+\section{Input Variables}\label{input-variables-2}}
 
 \hypertarget{year-stroke-risk}{%
 \section{5 year stroke risk}\label{year-stroke-risk}}
 
-\hypertarget{post-operative-myocardial-infarction}{%
-\section{Post operative Myocardial Infarction}\label{post-operative-myocardial-infarction}}
+\hypertarget{post-operative-myocardial-infarction-1}{%
+\section{Post operative Myocardial Infarction}\label{post-operative-myocardial-infarction-1}}
 
-  \bibliography{book.bib,packages.bib}
+  \bibliography{references.bib}
 
 \end{document}

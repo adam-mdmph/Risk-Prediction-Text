@@ -1,19 +1,19 @@
-# Abdominal Aortic Anuerysms (AAA) {#aaa}
+# Abdominal Aortic Aneurysms (AAA) {#aaa}
 
-The aim of this risk calculator is to assist in the management of patients with asymptomatic infrarenal aortica aneurysms found through screening or incidentally.
+The aim of this risk calculator is to assist in the management of patients with asymptomatic infrarenal aortic aneurysms found through screening or incidentally.
 
 ## Input variables
 
 ### Age
 
-This describes the expected age of the patient at the time of the procedure.  This is likely the same age as the patient at the time of the evaluation.
+This describes the expected age of the patient at the time of the procedure. This is likely the same age as the patient at the time of the evaluation.
 
 ### Sex
+
 ### Race
 
 ## 30d Procedural Mortality
 
-
+The model used for this risk prediction comes from the VSGNE published in 2015. @eslami2015
 
 ## Post Operative Myocardial Infarcation
-
