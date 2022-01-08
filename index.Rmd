@@ -25,15 +25,15 @@ Each chapter here reflects a page of the risk tool that should outline a certain
 
 The initial algorithms included in this project were found through a literature search of available medical databases, bibliography reviews and referrals from content experts. Published algorithms were reviewed and included if they met the following inclusion criteria.
 
-1.  Input variables available in the pre-operative setting.
-2.  Outcome variable relevant to decision making.
-3.  Full regression model with beta coefficients and intercept publically available in publication or through contact with publication authors.
+1.  Input variables available and commonly collected in the pre-operative setting.
+2.  Outcome variable relevant to clinician and patient for decision making.
+3.  Full regression model with beta coefficients and intercept publicly available in publication or through contact with publication authors.
 
-Available risk models were then reviewed and included based on their quality. Quality of risk model was determined through.
+Available risk models were then reviewed and included based on their quality. Quality of risk model was determined according to published TRIPOD guidelines,@collinsTransparentReportingMultivariable2015 prioritizing the following values:
 
-1.  Accuracy assessments, such as AUC, sensitivity or specificity assessments.
-2.  Parsimonious input variable selection and clear description of variable manipulation.
-3.  Homogenous patient population that aligns with the clinical question.
+1.  Accuracy assessments, such as AUC, sensitivity or specificity assessments determined through internal and external validation.
+2.  Parsimonious input variable selection and clear description of variable definitions and manipulations.
+3.  Clearly described homogeneous patient population that aligns with the clinical question.
 4.  Transparent stakeholder engagement and algorithm development.
 
 ## Feedback
