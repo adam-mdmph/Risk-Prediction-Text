@@ -119,8 +119,9 @@ div.csl-indent {
 <li class="chapter" data-level="2.1.12" data-path="aaa.html"><a href="aaa.html#esrd"><i class="fa fa-check"></i><b>2.1.12</b> ESRD</a></li>
 <li class="chapter" data-level="2.1.13" data-path="aaa.html"><a href="aaa.html#creatinine-mgdl"><i class="fa fa-check"></i><b>2.1.13</b> Creatinine (mg/dL)</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="aaa.html"><a href="aaa.html#in-hospital-postprocedural-mortality"><i class="fa fa-check"></i><b>2.2</b> In-hospital Postprocedural Mortality</a></li>
-<li class="chapter" data-level="2.3" data-path="aaa.html"><a href="aaa.html#post-operative-myocardial-infarcation"><i class="fa fa-check"></i><b>2.3</b> Post Operative Myocardial Infarcation</a></li>
+<li class="chapter" data-level="2.2" data-path="aaa.html"><a href="aaa.html#annual-rupture-risk"><i class="fa fa-check"></i><b>2.2</b> Annual Rupture Risk</a></li>
+<li class="chapter" data-level="2.3" data-path="aaa.html"><a href="aaa.html#in-hospital-postprocedural-mortality"><i class="fa fa-check"></i><b>2.3</b> In-hospital Postprocedural Mortality</a></li>
+<li class="chapter" data-level="2.4" data-path="aaa.html"><a href="aaa.html#post-operative-myocardial-infarcation"><i class="fa fa-check"></i><b>2.4</b> Post Operative Myocardial Infarcation</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="clti.html"><a href="clti.html"><i class="fa fa-check"></i><b>3</b> CLTI</a>
 <ul>
@@ -213,8 +214,12 @@ div.csl-indent {
 <p>This describes the most recently collected creatinine level. This is not used for predictions in patients with end stage renal disease on dialysis. Cr, age, gender and race are utilized to calculate eGFR for those models that utilize this instead of creatinine alone.</p>
 </div>
 </div>
-<div id="in-hospital-postprocedural-mortality" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> In-hospital Postprocedural Mortality</h2>
+<div id="annual-rupture-risk" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Annual Rupture Risk</h2>
+<p>The reported annual rupture risk is determined through a table published in the most recent edition of Rutherford’s Vascular Surgery and Endovascular Therapy.@tracciAortoiliacAneurysmsEvaluation The data regarding rupture risk is not well established and is from a number of years ago. These rates vary across a number of publications without clear citation of the primary data source. We have color coded based on expected clinical implications of the patients rupture risk.</p>
+</div>
+<div id="in-hospital-postprocedural-mortality" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> In-hospital Postprocedural Mortality</h2>
 <p>The model used for this risk prediction comes from the Vascular Study Group of New England (VSGNE) published in 2015.<span class="citation"><sup><a href="#ref-eslami2015" role="doc-biblioref">3</a></sup></span> <br /></p>
 <p>The patient cohort includes 4,431 patients who underwent elective AAA repair at institutions in Northeastern states on the United States of America (USA) captured in the prospectively collected VSGNE database between 2003 and 2013. This data was collected and maintained by trained nurse and clinical abstractors. The study excluded patients admitted for non-elective AAA repair, who had prior aortic surgery, or those who required a supraceliac clamp so prediction scores are not available for these patients. The outcome of interest was in-hospital postprocedural mortality. <br /></p>
 <p>The Model was developed using multivariable logistic regression with backward elimination, setting the alpha=0.2. The sum of the beta estimates was as follows:<br /></p>
@@ -223,8 +228,8 @@ div.csl-indent {
 <p>We have used this model to provide three prediction values in order to assist with decision making around what procedure to offer a patient presenting for evaluation. The first describes the mortality prediction, assuming that the patient underwent endovascular repair. The second describes the mortality prediction, assuming the patient underwent an open repair with an infrerenal repair. This open prediction is substituted for a third prediction, if the user signifies that they expect to need a suprarenal clamp for the repair. We have also considered patients who have ESRD on dialysis to be included in the group with Cr &gt; 2, although this is variable assignment is not explicitly stated by the authors. We have color coded the prediction to align with the authors’ identified clinical cut points at &lt;1% for low risk (green), 1-8% for moderate risk (yellow), 8-30% for high risk (orange), and &gt;30% for prohibitive risk.<br /></p>
 <p>The authors and we have identified a number of limitations. The outcome of interest is in-hospital mortality, which means that this only applies to the index hospitalization. Also, as of now this model has not been externally validated on data collected outside the development registry. Additional variables that may include model discrimination include patient functional status, aortic anatomic characteristics, and center or surgeon volume.</p>
 </div>
-<div id="post-operative-myocardial-infarcation" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Post Operative Myocardial Infarcation</h2>
+<div id="post-operative-myocardial-infarcation" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Post Operative Myocardial Infarcation</h2>
 
 </div>
 </div>

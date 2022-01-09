@@ -17,6 +17,7 @@ chronic-obstructive-pulmonary-disease-copd
 diabetese
 esrd
 creatinine-mgdl
+annual-rupture-risk
 in-hospital-postprocedural-mortality
 post-operative-myocardial-infarcation
 clti
