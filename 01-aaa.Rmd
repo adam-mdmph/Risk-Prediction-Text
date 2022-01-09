@@ -22,7 +22,7 @@ This describes whether the surgeon expects to need a clamp above both renals in 
 
 ### Pior Aortic Surgery
 
-This includes previous endovascular or open aortic surgery. Eslami et al do not described explicitly what is included in this variable, but is it utilized as an exclusion criteria in their model and so we capture it here to ensure their model is not utilized inappropriately for these patients.\@eslami2015
+This includes previous endovascular or open aortic surgery. Eslami et al do not described explicitly what is included in this variable, but is it utilized as an exclusion criteria in their model and so we capture it here to ensure their model is not utilized inappropriately for these patients. @eslami2015
 
 ### History of Coronary Artery Disease
 
@@ -58,7 +58,7 @@ This describes the most recently collected creatinine level. This is not used fo
 
 ## Annual Rupture Risk
 
-The reported annual rupture risk is determined through a table published in the most recent edition of Rutherford's Vascular Surgery and Endovascular Therapy.@tracciAortoiliacAneurysmsEvaluation The data regarding rupture risk is not well established and is from a number of years ago.  These rates vary across a number of publications without clear citation of the primary data source.   We have color coded based on expected clinical implications of the patients rupture risk.
+The reported annual rupture risk is determined through a table published in the most recent edition of Rutherford's Vascular Surgery and Endovascular Therapy. @tracciAortoiliacAneurysmsEvaluation The data regarding rupture risk is not well established and is from a number of years ago. These rates vary across a number of publications without clear citation of the primary data source. We have color coded based on expected clinical implications of the patients rupture risk.
 
 ## In-hospital Postprocedural Mortality
 
