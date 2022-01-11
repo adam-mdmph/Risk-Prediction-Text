@@ -20,7 +20,7 @@ This is the maximal aortic diameter in the AP direction reported in mm.
 
 This describes whether the surgeon expects to need a clamp above both renals in order to safely complete an open aortic aneurysm repair. Eslami et al includes whether a suprarenal clamp was used in their model for in hospital mortality.\@eslami2015 There may be some differences in expected or actual utilization of a suprarenal clamp.
 
-### Pior Aortic Surgery
+### Prior Aortic Surgery
 
 This includes previous endovascular or open aortic surgery. Eslami et al do not described explicitly what is included in this variable, but is it utilized as an exclusion criteria in their model and so we capture it here to ensure their model is not utilized inappropriately for these patients. @eslami2015
 
