@@ -6,7 +6,7 @@
 ]{book}
 \title{Manual for Risk Prediction in Vascular Surgery}
 \author{Adam Johnson}
-\date{2022-01-09}
+\date{2022-01-11}
 
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
@@ -135,7 +135,7 @@ For suggestions, comments or questions please submit an issue on our \href{https
 \hypertarget{aaa}{%
 \chapter{Abdominal Aortic Aneurysms (AAA)}\label{aaa}}
 
-The aim of this risk calculator is to assist in the management of patients with asymptomatic infrarenal or juxtarenal aortic aneurysms found incidentally or through screening.
+The aim of this risk calculator is to assist in decision making process of management of patients with asymptomatic infrarenal or juxtarenal aortic aneurysms found incidentally or through screening electively.
 
 \hypertarget{input-variables}{%
 \section{Input variables}\label{input-variables}}
@@ -158,17 +158,17 @@ This is the maximal aortic diameter in the AP direction reported in mm.
 \hypertarget{renal-clamp}{%
 \subsection{Renal Clamp}\label{renal-clamp}}
 
-This describes whether the surgeon expects to need a clamp above both renals in order to safely complete an open aortic aneurysm repair. Eslami et al includes whether a suprarenal clamp was used in their model for in hospital mortality.@eslami2015 There may be some differences in expected or actual utilization of a suprarenal clamp.
+This describes whether the surgeon expects to clamp above both renal arteries in order to safely complete an open aortic aneurysm repair. Eslami et al includes use of a suprarenal clamp in their model for calculating in hospital mortality.@eslami2015 There may be some differences in expected or actual utilization of a suprarenal clamp.
 
-\hypertarget{pior-aortic-surgery}{%
-\subsection{Pior Aortic Surgery}\label{pior-aortic-surgery}}
+\hypertarget{prior-aortic-surgery}{%
+\subsection{Prior Aortic Surgery}\label{prior-aortic-surgery}}
 
-This includes previous endovascular or open aortic surgery. Eslami et al do not described explicitly what is included in this variable, but is it utilized as an exclusion criteria in their model and so we capture it here to ensure their model is not utilized inappropriately for these patients. \citet{eslami2015}
+This includes previous endovascular or open aortic surgery. Eslami et al do not describe explicitly what is included in this variable, but is it used as an exclusion criterion in their model, so we therefore, capture it here to ensure the model is not utilized inappropriately for these patients. \citet{eslami2015}
 
 \hypertarget{history-of-coronary-artery-disease}{%
 \subsection{History of Coronary Artery Disease}\label{history-of-coronary-artery-disease}}
 
-This describes whether the patient has a documented history of coronary artery disease. This is further subdivided into asymptomatic heart disease or unstable/symptomatic heart disease within the past 6 months. Not all models include this subdivision and so asymptomatic and symptomatic disease are often combined when included in models that treat CAD as a binary variable.
+This describes whether the patient has a documented history of coronary artery disease(CAD). This is further subdivided into asymptomatic heart disease or unstable/symptomatic heart disease within the past 6 months. Not all models include this subdivision, so asymptomatic and symptomatic disease are often combined when included in models that treat CAD as a binary variable.
 
 \hypertarget{congestive-heart-failure}{%
 \subsection{Congestive Heart Failure}\label{congestive-heart-failure}}
@@ -178,7 +178,7 @@ This describes whether a patient has documented congestive heart failure in thei
 \hypertarget{stress-test}{%
 \subsection{Stress Test}\label{stress-test}}
 
-This describes whether a patient has undergone a preoperative stress test and the result of this test. If a patient has not undergone a stress test, then the user should select ``Not Performed.'' The model should then be updated once the result of this test is known. Seeing how the result of this test changes the predictions related to post-operative myocardial infarction may help to determine whether this test is warrented in this specific patient.
+This describes whether a patient has undergone a preoperative cardiovascular stress test and the result of this test. If a patient has not undergone a stress test, then the user should select ``Not Performed.'' The model should then be updated once the result of this test is known. Seeing how the result of this test changes the predictions related to post-operative myocardial infarction may help to determine whether this test is indicated for this specific patient.
 
 \hypertarget{cerebrovascular-disease}{%
 \subsection{Cerebrovascular Disease}\label{cerebrovascular-disease}}
@@ -190,15 +190,15 @@ This describes whether a patient has had a previous cebrovascular event, such as
 
 This describes whether a patient has a documented history of COPD. This is further subdivided into whether the patient is on medications or whether they require home oxygen therapy.
 
-\hypertarget{diabetese}{%
-\subsection{Diabetese}\label{diabetese}}
+\hypertarget{diabetes}{%
+\subsection{Diabetes}\label{diabetes}}
 
-This describes whether a patient has documented diabetes. This is further subdivided into whether their diabetes is controlled with diet, non-insulin medications or requires insulin. This variable does not distinguish Type 1 from Type 2 diabetes, however patients with Type 1 diabetes will likley fall into the category of diabetese requiring insulin therapy.
+This describes whether a patient has documented diabetes. This is further subdivided into whether their diabetes is controlled with diet, non-insulin medications or requires insulin. This variable does not distinguish Type 1 from Type 2 diabetes, however patients with Type 1 diabetes will likley fall into the category of diabetes requiring insulin therapy.
 
 \hypertarget{esrd}{%
 \subsection{ESRD}\label{esrd}}
 
-This describes patients with end stage renal disease (ESRD) requiring dialysis, whether peritoneal or hemodialysis. Patients with ESRD on HD are included in the highest Cr or lowest eGFR category for those models that use these variables alone without explicitly stating whether a patient is on dialysis.
+This describes patients with end stage renal disease (ESRD) requiring dialysis, whether peritoneal(PD) or hemodialysis(HD). Patients with ESRD on HD are included in the highest Cr or lowest eGFR category when considering renal function for those models that use these variables alone without explicitly asking whether a patient is on dialysis.
 
 \hypertarget{creatinine-mgdl}{%
 \subsection{Creatinine (mg/dL)}\label{creatinine-mgdl}}
@@ -208,24 +208,24 @@ This describes the most recently collected creatinine level. This is not used fo
 \hypertarget{annual-rupture-risk}{%
 \section{Annual Rupture Risk}\label{annual-rupture-risk}}
 
-The reported annual rupture risk is determined through a table published in the most recent edition of Rutherford's Vascular Surgery and Endovascular Therapy. \citet{tracciAortoiliacAneurysmsEvaluation} The data regarding rupture risk is not well established and is from a number of years ago. These rates vary across a number of publications without clear citation of the primary data source. We have color coded based on expected clinical implications of the patients rupture risk.
+The reported annual rupture risk is determined through a table published in the most recent edition of Rutherford's Vascular Surgery and Endovascular Therapy. \citet{tracciAortoiliacAneurysmsEvaluation} The data regarding rupture risk is not well established and is from a number of years ago. These rates vary across a number of publications without clear citation of the primary data source. We have color-coded the calculated annual rupture risk, based on expected clinical implications of the score.
 
 \hypertarget{in-hospital-postprocedural-mortality}{%
 \section{In-hospital Postprocedural Mortality}\label{in-hospital-postprocedural-mortality}}
 
 The model used for this risk prediction comes from the Vascular Study Group of New England (VSGNE) published in 2015. \citet{eslami2015}
 
-The patient cohort includes 4,431 patients who underwent elective AAA repair at institutions in Northeastern states on the United States of America (USA) captured in the prospectively collected VSGNE database between 2003 and 2013. This data was collected and maintained by trained nurse and clinical abstractors. The study excluded patients admitted for non-elective AAA repair, who had prior aortic surgery, or those who required a supraceliac clamp so prediction scores are not available for these patients. The outcome of interest was in-hospital postprocedural mortality.
+The outcome of interest was in-hospital postprocedural mortality. The patient cohort includes 4,431 patients who underwent elective AAA repair at institutions in Northeastern states on the United States of America (USA) captured in the prospectively collected VSGNE database between 2003 and 2013. This data was collected and maintained by trained nurse and clinical abstractors. The study excluded patients admitted for non-elective AAA repair, who had prior aortic surgery, or those who required a supraceliac clamp, so prediction scores are not available for these patients.
 
 The Model was developed using multivariable logistic regression with backward elimination, setting the alpha=0.2. The sum of the beta estimates was as follows:
 
 Sum of β- estimates= \{-6.76+ 1.08 (IR AAA) +1.905 (SR AAA)+ 0.78 (Age≥75) +0.69 (Female)+0.56 (MCD)+0.71(CVD)+ 0.95(COPD) 0.89 (1.5≤Cr\textless2)+1.31(Cr≥2)+0.91(AAA\textgreater6.5 cm)\}
 
-The authors reported good discrimination of their score with an AUC 0.822. The authors found their score to have better discrimination, when compared to previously publishe models: GAS (AUC 0.685), Medicare (AUC 0.769) and VGNW (AUC 0.767) models. Three additional previously published models were not compared as they included variables not collected by the VSGNE database. The improved discrimination and rigorous data collection in a vascular surgery specific patient population is why we have included this model in our risk score instead of these previously developed models.
+The authors reported good discrimination of their score with an AUC 0.822. The authors found their score to have better discrimination, when compared to previously published models: GAS (AUC 0.685), Medicare (AUC 0.769) and VGNW (AUC 0.767) models. Three additional previously published models were not compared as they included variables not collected by the VSGNE database. The improved discrimination and rigorous data collection in a vascular surgery specific patient population is why we have included this model in our risk score instead of these previously developed models.
 
-We have used this model to provide three prediction values in order to assist with decision making around what procedure to offer a patient presenting for evaluation. The first describes the mortality prediction, assuming that the patient underwent endovascular repair. The second describes the mortality prediction, assuming the patient underwent an open repair with an infrerenal repair. This open prediction is substituted for a third prediction, if the user signifies that they expect to need a suprarenal clamp for the repair. We have also considered patients who have ESRD on dialysis to be included in the group with Cr \textgreater{} 2, although this is variable assignment is not explicitly stated by the authors. We have color coded the prediction to align with the authors' identified clinical cut points at \textless1\% for low risk (green), 1-8\% for moderate risk (yellow), 8-30\% for high risk (orange), and \textgreater30\% for prohibitive risk.
+We have used this model to provide three prediction values in order to assist with decision making around which elective procedure to offer a patient presenting for evaluation. The first describes the mortality prediction, assuming that the patient underwent endovascular repair. The second describes the mortality prediction, assuming the patient underwent an open infrarenal repair. This open prediction is substituted for a third prediction, if the user signifies that they anticipate needing a suprarenal clamp for the repair. We have also considered patients who have ESRD on dialysis to be included in the group with Cr \textgreater{} 2, although this variable assignment is not explicitly stated by the authors. We have color-coded the prediction to align with the authors' identified clinical cut points at \textless1\% for low risk (green), 1-8\% for moderate risk (yellow), 8-30\% for high risk (orange), and \textgreater30\% for prohibitive risk.
 
-The authors and we have identified a number of limitations. The outcome of interest is in-hospital mortality, which means that this only applies to the index hospitalization. Also, as of now this model has not been externally validated on data collected outside the development registry. Additional variables that may include model discrimination include patient functional status, aortic anatomic characteristics, and center or surgeon volume.
+The authors and Vascalc have identified a number of limitations. The outcome of interest is in-hospital mortality, which means that this only applies to the index hospitalization. Also, as of now this model has not been externally validated on data collected outside the development registry. Additional variables that may include model discrimination include patient functional status, aortic anatomic characteristics, and center/surgeon volume.
 
 \hypertarget{post-operative-myocardial-infarcation}{%
 \section{Post Operative Myocardial Infarcation}\label{post-operative-myocardial-infarcation}}
