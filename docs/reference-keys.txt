@@ -7,6 +7,7 @@ input-variables
 age
 sex
 maximal-aortic-diameter
+patient-symptoms
 renal-clamp
 prior-aortic-surgery
 history-of-coronary-artery-disease
@@ -19,7 +20,7 @@ esrd
 creatinine-mgdl
 annual-rupture-risk
 in-hospital-postprocedural-mortality
-post-operative-myocardial-infarcation
+post-operative-in-hospital-myocardial-infarction
 clti
 input-variables-1
 post-procedural-mortality

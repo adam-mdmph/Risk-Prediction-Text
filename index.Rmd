@@ -21,6 +21,8 @@ This book is intended as an explanatory text to support the risk tool available 
 
 Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made. Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction. This risk calculator is developed for the sole purpose of decision support and results should not superscede clinician and patient preference.
 
+The main purpose of this project is to bring together many models developed by different stakeholders and datasets into a single clinically relevant interface. Each patient, procedure and clinical outcome are associated according to unique characteristics. Some have attempted to develop broadly applicable risk models.[@meguidSurgicalRiskPreoperative2016c; @meguidSurgicalRiskPreoperative2016d; @meguidSurgicalRiskPreoperative2016e] However, it seems unlikely that developing a small number of widely applicable models will provide the nuance and predictive accuracy to provide patient level guidance to affect clinical decision making.
+
 ## Methods
 
 The multivariable prognostic prediction models included in this project were found through a literature search of available medical databases, bibliography reviews and referrals from content experts. Published algorithms were reviewed and included if they met the following inclusion criteria.
@@ -32,7 +34,7 @@ The multivariable prognostic prediction models included in this project were fou
 Available risk models were then reviewed and included based on their quality. Quality of risk model was determined according to published TRIPOD guidelines,[@collinsTransparentReportingMultivariable2015; @moonsTransparentReportingMultivariable2015] prioritizing the following values:
 
 1.  Clearly described homogeneous patient population that aligns with the clinical question.
-2.  Model performance assessments, such as AUC, sensitivity or specificity determined through internal and external validation.
+2.  Model performance assessments of discrimination and calibration (such as AUC, Hosmer-Lemeshow, Brier score, sensitivity or specificity) determined through internal and ideallyx external validation.
 3.  Parsimonious input variable selection and clear description of variable definitions and manipulations.
 4.  Transparent stakeholder engagement and algorithm development.
 

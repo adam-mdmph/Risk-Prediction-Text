@@ -6,7 +6,7 @@
 ]{book}
 \title{Manual for Risk Prediction in Vascular Surgery}
 \author{Adam Johnson}
-\date{2022-01-11}
+\date{2022-02-06}
 
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
@@ -96,6 +96,8 @@ This book is intended as an explanatory text to support the risk tool available 
 
 Each chapter here reflects a page of the risk tool that should outline a certain clinical scenario that requires a decision to be made. Each chapter will be broken down into sections that will outline the decision making and available evidence used to provide each presented risk prediction. This risk calculator is developed for the sole purpose of decision support and results should not superscede clinician and patient preference.
 
+The main purpose of this project is to bring together many models developed by different stakeholders and datasets into a single clinically relevant interface. Each patient, procedure and clinical outcome are associated according to unique characteristics. Some have attempted to develop broadly applicable risk models.\citep{meguidSurgicalRiskPreoperative2016c, meguidSurgicalRiskPreoperative2016d, meguidSurgicalRiskPreoperative2016e} However, it seems unlikely that developing a small number of widely applicable models will provide the nuance and predictive accuracy to provide patient level guidance to affect clinical decision making.
+
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
 
@@ -120,7 +122,7 @@ Available risk models were then reviewed and included based on their quality. Qu
 \item
   Clearly described homogeneous patient population that aligns with the clinical question.
 \item
-  Model performance assessments, such as AUC, sensitivity or specificity determined through internal and external validation.
+  Model performance assessments of discrimination and calibration (such as AUC, Hosmer-Lemeshow, Brier score, sensitivity or specificity) determined through internal and ideallyx external validation.
 \item
   Parsimonious input variable selection and clear description of variable definitions and manipulations.
 \item
@@ -154,6 +156,11 @@ This describes the documented sex or gender of the patient as recorded in the me
 \subsection{Maximal Aortic Diameter}\label{maximal-aortic-diameter}}
 
 This is the maximal aortic diameter in the AP direction reported in mm.
+
+\hypertarget{patient-symptoms}{%
+\subsection{Patient Symptoms}\label{patient-symptoms}}
+
+Patient symptoms are stratified into asymptomatic, meaning that the patient has no clinical manifestations of aneurysm disease and the aneurysm was detected from screening, routine physical exam finding of pulsatile mass or incidentally. Symptomatic is defined as pain or tenderness associated with the abdominal aneurysm and concerning findings on imaging, requiring urgent intervention. Rupture is defined as patients presenting with acute onset of pain with or without hypotension and imaging findings concerning for aneurysm rupture.
 
 \hypertarget{renal-clamp}{%
 \subsection{Renal Clamp}\label{renal-clamp}}
@@ -213,7 +220,7 @@ The reported annual rupture risk is determined through a table published in the 
 \hypertarget{in-hospital-postprocedural-mortality}{%
 \section{In-hospital Postprocedural Mortality}\label{in-hospital-postprocedural-mortality}}
 
-The model used for this risk prediction comes from the Vascular Study Group of New England (VSGNE) published in 2015. \citet{eslami2015}
+The model used for this risk prediction comes from the Vascular Study Group of New England (VSGNE) published in 2015. \citet{eslami2015} There are a number of models for post-operative mortality, however they were not developed or validated in our target population specifically.\citep{meguidSurgicalRiskPreoperative2016d, meguidSurgicalRiskPreoperative2016c, meguidSurgicalRiskPreoperative2016e} We opted for a risk model developed specifically for elective aortic surgery.
 
 The outcome of interest was in-hospital postprocedural mortality. The patient cohort includes 4,431 patients who underwent elective AAA repair at institutions in Northeastern states on the United States of America (USA) captured in the prospectively collected VSGNE database between 2003 and 2013. This data was collected and maintained by trained nurse and clinical abstractors. The study excluded patients admitted for non-elective AAA repair, who had prior aortic surgery, or those who required a supraceliac clamp, so prediction scores are not available for these patients.
 
@@ -225,10 +232,26 @@ The authors reported good discrimination of their score with an AUC 0.822. The a
 
 We have used this model to provide three prediction values in order to assist with decision making around which elective procedure to offer a patient presenting for evaluation. The first describes the mortality prediction, assuming that the patient underwent endovascular repair. The second describes the mortality prediction, assuming the patient underwent an open infrarenal repair. This open prediction is substituted for a third prediction, if the user signifies that they anticipate needing a suprarenal clamp for the repair. We have also considered patients who have ESRD on dialysis to be included in the group with Cr \textgreater{} 2, although this variable assignment is not explicitly stated by the authors. We have color-coded the prediction to align with the authors' identified clinical cut points at \textless1\% for low risk (green), 1-8\% for moderate risk (yellow), 8-30\% for high risk (orange), and \textgreater30\% for prohibitive risk.
 
-The authors and Vascalc have identified a number of limitations. The outcome of interest is in-hospital mortality, which means that this only applies to the index hospitalization. Also, as of now this model has not been externally validated on data collected outside the development registry. Additional variables that may include model discrimination include patient functional status, aortic anatomic characteristics, and center/surgeon volume.
+The authors and our VasCalc have identified a number of limitations. The outcome of interest is in-hospital mortality, which means that this only applies to the index hospitalization. Also, as of now this model has not been externally validated on data collected outside the development registry. Additional variables that may include model discrimination include patient functional status, aortic anatomic characteristics, and center/surgeon volume.
 
-\hypertarget{post-operative-myocardial-infarcation}{%
-\section{Post Operative Myocardial Infarcation}\label{post-operative-myocardial-infarcation}}
+\hypertarget{post-operative-in-hospital-myocardial-infarction}{%
+\section{Post Operative In-hospital Myocardial Infarction}\label{post-operative-in-hospital-myocardial-infarction}}
+
+The model used to derive post operative in-hopsital myocardial infarction was published by Bertges et al in 2016. \citet{bertgesVascularQualityInitiative2016}
+
+The outcome of interest is in-hospital post-operative myocardial infarction defined as troponin elevation alone or by clinical or ECG criteria. They deliberately did not include a composite end point of postoperative CHF or arrhythmia.
+
+The population used to derive this model non-emergent vascular procedures in the Vascular Quality Initiative (VQI) registry performed between 2012 and 2014 (N=88,791 patients) and validated on procedures performed between 2015 and 2016 (N=27,555 patients). The VQI registry is composed of 350 community and academic hospitals in the United States and Canada. Procedures included in this population fell into 5 major categories, carotid endarterectomy, infra-inguinal revascularization, suprarenal revascularization, endovascular aortic aneurysm repair and open aortic aneurysm repair.
+
+The authors excluded aneurysms involving the renal arteries. Therefore we are unable to calculate the risk score if the clinician inputs that they expect to need to clamp above the renal arteries. The authors also included only elective or emergent procedures without rupture. Therefore we excluded patients with ruptured aneurysms.
+
+The authors developed this model using a bootstrapped logistic regression with step-wise variable elimination. The authors include models specific to EVAR and open AAA repair, however they only report odds ratios and not the full model. Therefore we based our predictions on the over all model which is reported in full. The sum of the beta coefficients is as follows:
+
+Sum of β- estimates= \{-5.82+ 0.17(EVAR) +1.91(OAAA)+ 0.44(Age 60-69) + 0.64(Age 70-79) + 1.10(Age \textgreater=80) + 0.76(Cr \textgreater=1.18) + 0.64(On Dialysis) - 0.15(Normal Stress Test) + 0.46(Abnormal Stress Test) + 0.40(Asymp CAD) + 0.76(Symp CAD) + 0.18(Diet controlled DM) + 0.20(Non insulin DM) + 0.39(Insulin DM) + 0.44(Asymp CHF) + 0.50(Symp CHF)\}
+
+The authors report good external validation with an AUC 0.75. While the authors did not specifically validate against other cardiac risk scores. They identify that many others are developed in a much broader surgical population and may not be as accurate when applied to a vascular surgery specific population particularly when stratifying across different vascular procedures. \citep{bertgesVascularStudyGroup2010, guptaDevelopmentValidationRisk2011a}
+
+The authors and our VasCalc group have identified a number of limitations. The authors report procedure specific models, however do not provide the full regression equation, therefore we are unable to use them here. The authors also report that this model is not intended to be used in the emergent situation, however symptomatic and urgent procedures are included in their cohort of patients. Finally, they include troponin-only definition of myocardial infarction. They report that troponin elevation is associated with poor outcomes, but the mechanism is not well understood and this definition and clinical relevance is controversial. Finally the AUC, while adequate is on the lower end of providing useful discrimination. Additional metrics for calibration might help to better compare this risk model to other published models.
 
 \hypertarget{clti}{%
 \chapter{CLTI}\label{clti}}
